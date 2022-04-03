@@ -1,0 +1,9 @@
+services:
+    luoning.hideuserage.listener:
+        class: luoning\hideuserage\event\main_listener
+        arguments:
+            - '@config'
+            - '@language'
+            - '@template'
+        tags:
+            - { name: event.listener }
